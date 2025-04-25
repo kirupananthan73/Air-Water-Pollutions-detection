@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin : 0;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar-links{
+    display : flex;
+    column-gap: 20px;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.navbar-menu-toggle{
+    display: none;
+} 
+
+/* Side Navbar */
+
+.side-navbar{
+    background-color: #1D232C;
+    width : 50%;
+    height : 100%;
+    position : fixed;
+    top : 0;
+    left : -60%;
+    padding : 20px;
+    color : white;
+    transition: 2s;
+   
+}
+
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-family: Fira code;
+}
+
+.sub-heading{
+    margin: 20px 0;
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+
+.location-container{
+    margin: 40px 0;
+}
+
+.loc-input{
+    border: 3px solid #269fe6;
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 6px;
+    margin: 10px;
+    width: 270px;
+}
+
+.loc-input:invalid{
+    border: 3px solid #d34545;
+}
+
+.search-btn{
+    padding: 10px 14px;
+    background-color: #269fe6;
+    border: none;
+    font-family: poppins;
+    font-size: 1rem;
+    border-radius: 4px;
+    color: #fff;
+    margin: 10px;
+}
+
+.air-quality, .arr, .air-quality-status{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.component-names{
+    display: inline-block;
+}
+
+.component-container div{
+    margin: 10px 0;
+}
+
+.component-val{
+    font-size: 1.2rem;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+}

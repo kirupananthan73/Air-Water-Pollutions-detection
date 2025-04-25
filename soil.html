@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+<title>Soil Quality Indicator</title>
+<link rel="stylesheet" href="soil.css">
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar">
+    <h1>Environmental Monitoring</h1>
+
+    <div class="navbar-links">
+        <p class="navbar-link"><a href="index.html">Air Pollution Indicator</a></p>
+        <p class="navbar-link"><a href="water.html">Water Quality</a></p>
+        <p class="navbar-link"><a href="soil.html">Soil Quality</a></p>
+    </div>
+
+    <div class="navbar-menu-toggle" onclick="showNavbar()">
+        <i class="fa-solid fa-bars"></i>
+    </div> 
+</nav>
+
+<!-- Side Navbar -->
+<div class="side-navbar">
+    <p style="text-align: right;" onclick="closeNavbar()">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+    
+    <div class="side-navbar-links">
+        <p class="side-navbar-link"><a href="index.html">Air Pollution Indicator</a></p>
+        <p class="side-navbar-link"><a href="water.html">Water Quality</a></p>
+        <p class="side-navbar-link"><a href="soil.html">Soil Quality</a></p>
+    </div>
+
+</div>
+
+<h1>Soil Quality Indicator</h1>
+<div id="indicator">
+<p>Enter values:</p>
+<ul>
+<li>pH: <input type="number" step="0.1" id="phInput"></li>
+<li>Organic Matter (%): <input type="number" step="0.1"
+id="organicMatterInput"></li>
+</ul>
+<p id="qualityDisplay"></p>
+<button onclick="checkQuality()">Check Quality</button>
+</div>
+</body>
+<script src="soil.js"></script>
+</html>
